@@ -4,6 +4,7 @@
 body {
   background-color: #fff;
   padding:50px;
+  padding-top: 40px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
@@ -20,10 +21,6 @@ p, ul, ol, table, pre, dl {
 
 h1, h2, h3 {
   line-height:1.1;
-}
-
-h1 {
-  font-size:28px;
 }
 
 h2 {
@@ -44,20 +41,27 @@ a:hover, a:focus {
   font-weight: bold;
 }
 
-a small {
-  font-size:11px;
-  color:#777;
-  margin-top:-0.3em;
-  display:block;
-}
-
-a:hover small {
-  color:#777;
-}
-
 .wrapper {
   width:860px;
   margin:0 auto;
+}
+
+.profile-picture {
+  width: 100px;
+	border-radius: 300px;
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+}
+
+.button {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 14px;
+  background: rgb(220,220,225);
+  border-radius: 4px;
 }
 
 blockquote {
@@ -196,6 +200,19 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+.title {
+  margin: auto;
+  color:inherit;
+  text-align: left;
+  width: 250px;
+  /* background-color:rgb(240,230,230); */
+  /* text-align: center; */
+}
+
+.intro {
+  margin: auto;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
@@ -207,10 +224,6 @@ footer {
     float:none;
     position:static;
     width:auto;
-  }
-
-  header {
-    padding-right:320px;
   }
 
   section {
