@@ -1,73 +1,106 @@
-<!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link rel="stylesheet" href="autumn.css">
-    <meta name="viewport" content="width=device-width">
-    <title>Autumn Basinger</title>
-  </head>
+<!DOCTYPE html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Autumn Basinger</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="./main.css">
+	</head>
+	<body class="">
 
-  <body>
-    <div class="wrapper">
-      <header>
-      <center>
-        <img src='img/profileSquare.jpg' class="profile-picture"/>
-        <h4>AUTUMN BASINGER</h4>
-        <h1>I design products and experiences</h1>
-      </center>
-      </header>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-    <section>
-      <h3>KEYBOARD</h3>
-      <p>This React App keyboard
-        colors your words in real time,
-        responding to your typing by adding red, green and blue
-        to each letter. Use it for writing, brainstorming,
-        or finding out what lorem ipsum looks like.</p>
-      <a class="button" href="https://autumnbasinger.github.io/colorkeys/" target="blank">TRY IT</a>
-      <a href="https://autumnbasinger.github.io/colorkeys/" target="_blank"><img src='img/keys.png' alt='Colored keys'></a></br>
-    </section>
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">Autumn Basinger</a></h1>
+			<nav class="links">
+				<ul>
+					<li><a href='#about'>Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
-    <section>
-      <h3>RGB CLOCK</h3>
-      <p>Is it half past green or a quarter to blue?
-        This crazy clock
-        translates time to color, showing you both.
-        And yes, if you type the bottom values into a color picker, it'll match.</p>
-      <a class="button" href="https://autumnbasinger.github.io/hex-mix/" target="blank">TRY IT</a>
-      <a href="https://autumnbasinger.github.io/hex-mix/" target="_blank"><img src='img/purple.png' alt='Color clock'></a></br>
-    </section>
+		<!-- Main -->
+		<div id="main">
+			<section id="intro">
+				<header>
+					<h2>A maker's quest</h2>
+					<p>1. Explore what is known and unknown</br>
+						2. Challenge the current reality</br>
+						3. Rethink the "impossible"</p>
+				</header>
+			</section>
 
-    <section>
-      <h3>MUSIC</h3>
-      <p>What would music look like if you could see it?
-        These visualizations offer an answer.
-        Both variations stem from aspects of music's mathematical structure,
-        such as harmonic relationships and the duration of notes.</p>
-      <!-- <p>These visualizations are based on this piece:</p> -->
-      <img src='img/digital.jpg' alt='Digital visual music'>
-      <img src='img/musicviz.png' alt='Visual music sculpture'>
-    </section>
+			<!-- Mini Posts -->
+			<section>
+				<div class="mini-posts">
 
-    <section>
-      <h3>TURVANGLES</h3>
-      <p>A play on the words 'curve' and 'triangle', Turvangles together form an
-        interactive sculpture that becomes as unique and creative as the current builder.</p>
-      <img src='img/blured.jpg' alt='Interactive wooden sculpture pieces'>
-      <img src='img/tall.jpg' alt='Interactive wooden sculpture pieces'>
-    </section>
+						<article class="mini-post">
+							<header>
+								<h3><a href="projects/bumpit.html">Bumpit</a></h3>
+								<time class="published">Put your fists together</time>
+								<a href="" class="author"><img src="" alt="" /></a>
+							</header>
+							<a href="projects/bumpit.html" class="image"><img src="./img/bump-banner.jpg" alt="" /></a>
+						</article>
 
-      <footer>
-        <center>
-          <a class='button' href="https://drive.google.com/file/d/1zeiaYGHLEKuU8n6mGZSLKXH3x-Mndrgo/view?usp=sharing" target="blank">Resume</a>
-          <a class='button' href="https://www.linkedin.com/in/autumnbasinger/" title="LinkedIn" target="blank">LinkedIn</a>
-          <a class='button' href="https://github.com/AutumnBasinger" title="GitHub" target="blank">GitHub</a></br>
-          autumnbasinger@gmail.com
-        </p>
-      </center>
-      </footer>
+						<article class="mini-post">
+							<header>
+								<h3><a href="projects/tasteful.html">Tasteful</a></h3>
+								<time class="published">A synesthetic experience</time>
+								<a href="" class="author"><img src="" alt="" /></a>
+							</header>
+							<a href="projects/tasteful.html" class="image"><img src="./img/taste-banner.jpg" alt="" /></a>
+						</article>
 
-    </div>
-  </body>
-</html>
+						<article class="mini-post music">
+							<header>
+								<h3><a href="projects/makenote.html">Make Note</a></h3>
+								<time class="published">A composed program</time>
+								<a href="" class="author"><img src="" alt="" /></a>
+							</header>
+							<a href="projects/makenote.html" class="image"><img src="./img/note-banner.jpg" alt="" /></a>
+						</article>
+
+						<article class="mini-post color">
+							<header>
+								<h3><a href="projects/colortime.html">Colortime</a></h3>
+								<time class="published">It's blue thirty somewhere</time>
+								<a href="" class="author"><img src="" alt="" /></a>
+							</header>
+							<a href="projects/colortime.html" class="image"><img src="./img/color-banner.jpg" alt="Javascript code" /></a>
+							<!-- <center><iframe src='https://autumnbasinger.github.io/hex-mix/' style="height:630px;width:100%;"></iframe></center> -->
+						</article>
+
+				</div>
+			</section>
+
+			<article class="post about" id="about">
+				<center>
+					<i>I love to discover and reimagine how people interact - designing that which may delight, enlighten, empower, clarify, or bring humans closer.</i>
+				</br></br>
+				</center>
+			</article>
+
+			<article class="post" id="contact">
+				<center>
+					<header>
+						<h2>Say hello</h2>
+					</header>
+					<p>
+						<button><a href='https://www.linkedin.com/in/autumnbasinger/'>LinkedIn</a></button>
+						<button><a href='https://github.com/AutumnBasinger'>Github</a></button></br>
+						<p>autumnbasinger@gmail.com</p>
+					</p>
+				</center>
+			</article>
+
+	<!-- Scripts -->
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/browser.min.js"></script>
+		<script src="./js/breakpoints.min.js"></script>
+		<script src="./js/util.js"></script>
+		<script src="./js/main.js"></script>
+
+
+</body></html>
