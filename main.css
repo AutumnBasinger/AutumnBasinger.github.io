@@ -2684,27 +2684,23 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-		@media screen and (max-width: 1280px) {
+	.mini-posts {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		width: calc(100% + 2em);
+	}
 
-			.mini-posts {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
-				-moz-flex-wrap: wrap;
-				-webkit-flex-wrap: wrap;
-				-ms-flex-wrap: wrap;
-				flex-wrap: wrap;
-				width: calc(100% + 2em);
-			}
-
-				.mini-posts > * {
-					margin: 2em 2em 0 0;
-					width: calc(50% - 2em);
-					/* change back to 50% for columns of 2 - Autumn*/
-				}
-
-		}
+	.mini-posts > * {
+		margin: 2em 2em 0 0;
+		width: calc(50% - 2em);
+		/* change back to 50% for columns of 2 - Autumn*/
+	}
 
 		/* An equal placed below */
 		/* @media screen and (max-width: 480px) {
@@ -3449,10 +3445,12 @@ input, select, textarea {
 	#intro header h2 {
 		font-size: 2em;
 		font-weight: 900;
+		text-align: center;
 	}
 
 	#intro header p {
-		font-size: 0.8em;
+		font-size: 0.7em;
+		text-align: center;
 	}
 
 	@media screen and (max-width: 1280px) {
@@ -3464,10 +3462,6 @@ input, select, textarea {
 
 			#intro header h2 {
 				font-size: 2em;
-			}
-
-			#intro header p {
-				font-size: 0.7em;
 			}
 
 	}
