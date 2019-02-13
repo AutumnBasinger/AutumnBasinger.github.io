@@ -2271,7 +2271,7 @@ input, select, textarea {
 			max-width: 40%;
 		}
 
-		.image.bumpit {
+		.image.half {
 		 max-width: 49%;
 	 }
 
@@ -2944,7 +2944,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.image.bumpit {
+			.image.half {
 				max-width: 49%;
 			}
 
@@ -2971,7 +2971,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			.image.bumpit {
+			.image.half {
 				max-width: 100%;
 			}
 
