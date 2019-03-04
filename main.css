@@ -3445,13 +3445,15 @@ input, select, textarea {
 		}
 
 	#intro header h2 {
+		/* color: #2ebaae; */
 		font-size: 2em;
-		font-weight: 900;
+		font-weight: 500;
 		text-align: center;
 	}
 
 	#intro header p {
-		font-size: 0.7em;
+		font-size: 0.85em;
+		line-height: inherit;
 		text-align: center;
 	}
 
