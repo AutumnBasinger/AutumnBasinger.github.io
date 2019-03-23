@@ -33,6 +33,11 @@ body {
 	line-height: 1;
 }
 
+iframe {
+	width:100%;
+	height:640px;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -89,6 +94,14 @@ input, select, textarea {
 		html, body {
 			min-width: 320px;
 		}
+
+		iframe {
+			height:330px;
+		}
+
+
+		/* style="height:630px;width:100%;" */
+
 
 	}
 
