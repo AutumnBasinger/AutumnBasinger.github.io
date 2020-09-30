@@ -1,114 +1,64 @@
 <!DOCTYPE HTML>
-<html>
-
 <!--
-	Story by HTML5 UP
+	Strata by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-
+<html>
 	<head>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160651739-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-160651739-1');
-		</script>
-		<title>Animating Era Pro</title>
+		<title>Animated Petals</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-
 	<body class="is-preload">
 
-			<div id="wrapper" class="divided">
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<h2><a class="title" href="index.html">autumn basinger</a></h2>
+				<li>‽ <a href="about.html">design philosophy & about</a></li>
+				</br>
+				<h1>my work</h1>
+					<li>‽ <a class="selected" href="pax.html">animated petals</a></li>
+					<li>‽ <a href="apple.html">process automation</a></li>
+					<li>‽ <a href="scale.html">content design</a></li>
+					<li>‽ <a href="makenote.html">music instrument</a></li>
+					<li>‽ <a href="turvangles.html">interactive shapes</a></li>
+					<li>‽ <a href="scentsation.html">scented emotions</a></li>
+			</div>
+		</header>
 
-				<section class="wrapper style1 align-left">
-					<div class="inner large">
-						<div class="content">
-							<ul class="actions">
-								<h1><b><a href="index.html">autumn basinger</a></b> — <i>product designer with computational flair</i></h1>
-								<li><h3><a href="index.html">work</a></h3></li>
-								<li><h3><a href="Autumn-Basinger-Resume.pdf">resume</a></h3></li>
-								<li><h3><a href="contact.html">contact</a></h3></li>
-								<li><h3><a href="art.html">sculpture!</a></h3></li>
-							</ul>
-						</div>
-					</div>
-				</section>
+		<!-- Main -->
+			<div id="main">
+					<section id="one">
+						<h3>Designing animated petal interactions at PAX Labs</h3>
+						<span class="image fit"><img src="images/pax-pros.png" alt="" /></span>
+						<p>PAX Labs makes premium cannabis vaporizers that communicate with users through a four-petal LED interface. From battery level and temperature to consumption tracking, a language of colorful animations and haptic feedback provides users with information relevant to their cannabis experience.</p>
+						<p>My work at PAX involved creating a consistent animation language for the Era Pro concentrate device, refining Era Pro's animation set, and building a digital prototyping tool used to design and visualize animations in the browser.</p>
+					</section>
 
-				<section class="wrapper style1 align-center">
-					<div class="inner large">
-						<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-							<div class="content">
-								<h1>Animating Era Pro</h1></br>
-								<img src="img/paxlabs.png" class="image fit" alt="" />
-								<p class="major">PAX Labs' latest in premium cannabis technology,
-									<a href="https://www.pax.com/blogs/press/pax-labs-new-era-pro%E2%84%A2-smart-vaporizer-elevates-the-cannabis-experience">Era Pro</a>
-									is a connected concentrate vaporizer that delivers
-									the gold standard of quality, safety, and experience to consumers.</p>
-								<p>As the creative technologist for Era Pro,
-									I worked closely with engineering teams and project managers to define the animation "language" of the device.</p>
-								<p>Era Pro responds to user interactions with color, movement, and haptic feedback to communicate
-									everything from temperature and battery level to pod information.</p>
-								<p>I was responsible for writing detailed spec sheets to convey device animations and UX behavior
-									to the firmware team. Initially, I spent many hours with engineers building a technical understanding
-									of the device. This facilitated smooth handoff of designs, and provided knowledge
-									for how to best use Era Pro's capabilities when designing user interactions.</p>
-							</div>
-							<div class="image">
-								<img src="img/blackpro.jpg" alt="" />
-							</div>
-						</section>
+					<section id="two">
+						<h3>The process</h3>
+						<p>When I began working with PAX, they initially needed someone to rebuild from scratch the animation and UX spec docs for Era Pro. I worked heavily with the firmware team in this stage, developing a detailed technical understanding of animations, device sensors, and interaction logic.</p>
+						<p>Armed with this understanding of how the device worked at a low level, I created what I called frame code: a minimal set of variables that could precisely define animations, save for a few wild exceptions. From there, I abstracted upwards to create fresh documentation that was accurate, consistent, and comprehensible both by project managers and of course, firmware engineers. </p>
+						<p>Eventually, I used this same system of frame code to build a browser-based prototyping tool that could precisely visualize existing or proposed animations just as they would appear on the actual device.</p>
+						<span id="petaltype" class="image fit"><img src="images/pax-petaltype.gif" alt="" /></span>
+						<p>This meant that project managers and myself could now work out exactly which designs we wanted, instead of PMs constantly going to firmware and saying things like “Actually, can you make that swirl faster...but more <i>flowy?</i>"</p>
+						<p>This prototyping tool, which I named PetalType, proved useful even outside of the development process. I used it to produce animation GIFs and create a company-wide document detailing the current build’s user interactions and what each corresponding animation was supposed to look like. If it <i>didn’t</i> look like that, then file a bug.</p>
+						<p>Towards the launch of Era Pro, I authored the final user guide explaining Era Pro’s many animations and interactions to consumers.</p>
+					</section>
 
-						<section class="banner style3 orient-left content-align-center image-position-center onscroll-image-fade-in" id="first">
-							<p class="major">Built an internal prototyping tool to precisely communicate animations
-								both visually and technically to PMs and firmware</p>
-							<div class="image">
-								<img src="img/petaltype.gif" alt="" />
-							</div>
-						</section>
+					<section id="three">
+						<span class="image left third"><img src="images/pax-temp.gif" alt="" /></span>
+						<span class="image left third"><img src="images/pax-shake.gif" alt="" /></span>
+						<span class="image left third"><img src="images/pax-draw.gif" alt="" /></span>
+					</section>
+			</div>
 
-						<section class="banner style3 orient-right content-align-center image-position-center onscroll-image-fade-in" id="first">
-							<p class="major">Wrote and designed the
-								<a href="https://cdn.shopify.com/s/files/1/0076/6132/2276/files/PAX_Era_Pro_User_Guide.pdf">Era Pro User Guide</a>,
-								a comprehensive walk-through of device functionality and animations</p>
-							<div class="image">
-								<img src="img/userguide.gif" alt="" />
-							</div>
-						</section>
-
-						<section class="wrapper style1 align-center">
-							<div class="inner large">
-								<p>
-									<a href="https://www.forbes.com/sites/emilyprice/2020/01/06/paxs-new-era-pro-is-the-pocket-sized-smart-cannabis-vaporizer-youve-been-waiting-for/#25aa67bf7b84">
-									PAX’s new Era Pro is the pocket-sized smart cannabis vaporizer you’ve been waiting for</a></br>
-									<a href="https://techcrunch.com/2020/01/06/pax-unveils-a-vape-that-increases-transparency-around-cannabis-consumption/">
-									PAX unveils a vape that increases transparency around cannabis consumption</a></br>
-									<a href="https://www.engadget.com/2020/01/06/pax-era-pro/">
-									PAX introduces the Era Pro, a smarter vape for cannabis nerds</a></br>
-								</p>
-							</div>
-						</section>
-
-					</div>
-				</section>
-
-				<footer class="wrapper style1 align-center">
-					<div class="inner">
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/autumnbasinger/" class="icon brands style1 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/AutumnBasinger" class="icon brands style1 fa-github"><span class="label">Github</span></a></li></br>
-						</ul>
-					</div>
-				</footer>
-
+		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>

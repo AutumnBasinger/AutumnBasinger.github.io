@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Interactive Shapes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<h2><a class="title" href="index.html">autumn basinger</a></h2>
+				<li>‽ <a href="about.html">design philosophy & about</a></li>
+				</br>
+				<h1>my work</h1>
+					<li>‽ <a href="pax.html">animated petals</a></li>
+					<li>‽ <a href="apple.html">process automation</a></li>
+					<li>‽ <a href="scale.html">content design</a></li>
+					<li>‽ <a href="makenote.html">music instrument</a></li>
+					<li>‽ <a class="selected" href="turvangles.html">interactive shapes</a></li>
+					<li>‽ <a href="scentsation.html">scented emotions</a></li>
+			</div>
+		</header>
+
+		<!-- Main -->
+			<div id="main">
+					<section id="one">
+						<h3>Modular shapes for an interactive spatial sculpture</h3>
+						<span class="image fit"><img src="images/turv-gallery.jpg" alt="" /></span>
+						<p>For my graduating BFA gallery exhibition, I created Turvangles. They're a set of 16 <i>different</i> asymmetrical interlocking shapes that together allow users to form a myriad of mathematically unique spatial sculptures.</p>
+						<p>When I first started sketching out ideas for modular shapes, I was very drawn to working with non-right angles. I liked the idea of irregularity and wanted to introduce an unpredictable nature to the building process.</p>
+						<p>I knew I was planning to laser cut my final shapes out of wood, and this was my biggest constraint during ideation. Although I had infinite two-dimensional freedom, the third would just be a right-angled extrusion of whatever I came up with. I would essentially have flat plains intersecting perpendicularly. This meant I needed to create the spatial angles I was looking for through the design of the shapes themselves.</p>
+						<p>The first set that I cut and tested involved attaching multiple 120° arcs (the highlighted leftmost shape) together in different ways:<p>
+						<span class="image fit"><img src="images/turv-hex.png" alt="" /></span>
+						<p>While I liked shapes having several connection points, it was impossible to fit new shapes at both ends of any 240° arc (shapes 2, 4, and 6 in the lineup). Other shapes had only two connection points which felt a bit boring.</p>
+						<p>As I was working on a revision, I realized something important: I had been trying to create interesting angles by going <i>around</i> the circumference of hexagons, but what are hexagons except six triangles put together? I could achieve the same angles more succinctly by going <i>through</i> triangles instead.</p>
+						<p>I started by creating the smaller template on the left in the picture below, and then made one shape for each unique combination of three connection points. (If a shape could be flipped to form a previous shape, it wasn’t unique.) This gave me four shapes, which didn’t seem like quite enough, so I mirrored the template and found an additional 12 shapes using the same method.</p>
+						<span class="image fit"><img src="images/turv-template.png" alt="" /></span>
+					</section>
+
+					<section id="two">
+						<h3>Possibilities</h3>
+						<p>Okay, buckle up! We're diving into some math.</p>
+						<p>For the exhibition, I made several sets of Turvangles for people to play with. But technically, one set is composed of 16 unique Turvangle types. How many <i>different</i> sculptures, I wondered, could <i>possibly</i> be made using just one set of Turvangles?</p>
+						<span class="image fit"><img src="images/turv-mock.png" alt="" /></span>
+						<p>Let’s start with just two different shapes. Each is asymmetrical and has 3 connection points. Holding one shape still, there are 6 different ways that we could attach the second shape (3 connection points * 2 sides) to any <i>one</i> connection point on the first shape. Multiply this by 3, the number of connection points on the first shape, and we have 18 different two-shape sculpture possibilities.</p>
+						<p>But how many <i>16-shape</i> sculpture possibilities are there?</p>
+						<span class="image left"><img src="images/turv-calc.jpg" alt="" /></span>
+						<p>I had answered this question back when I first created Turvangles. However, I recently realized that my careful calculations had been wrong! It turns out that the real answer is much higher than I thought, and it was <i>already</i> in the septillions. To the left is a picture of my recalculations. </p>
+						<p>Previously, I figured there could be 432 three-shape sculptures: 4 open connection points on a two-shape sculpture times 6 ways to attach the third shape times 18 <i>previous</i> two-shape sculpture possibilities. My mistake was that I failed to consider that these 432 possibilities did not include any three-shape sculptures in which the first two shapes were not still directly connected.</p>
+						<p>I found that there are actually 648 three-shape sculpture possibilities, but I did not go on to calculate the true number of 16-shape possibilities because I’m busy doing new things with my life. Stay tuned. I may try to figure it out one day.</p>
+					</section>
+
+					<section id="three">
+						<span class="image fit"><img src="images/turv-kids.jpg" alt="" /></span>
+						<span class="image fit"><img src="images/turv-tall.jpg" alt="" /></span>
+						<span class="image fit"><img src="images/turv-stained.jpg" alt="" /></span>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
