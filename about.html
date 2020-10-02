@@ -42,12 +42,38 @@
 						<h3>About</h3>
 						<p>I’m a designer based in San Francisco, California with a passion for creating fantastic experiences across disciplines. After earning my BFA from the University of Central Florida, I moved to Silicon Valley where I’ve so far designed for health and wellness, data management, and interactive hardware.</p>
 						<p>I enjoy connecting the dots to form a new big picture <i>what</i>, and also zooming in to the details of designing the <i>how</i> - the products, processes, and systems that translate input to output. In addition to all things interactive, I’m fascinated by combinations, computation, and cognitive science. Give me all four together and I’m sold!</p>
+						<li class="icon brands solid fa-linkedin contact"> <a href="https://www.linkedin.com/in/autumnbasinger/">LinkedIn</a></li>
+						<li class="icon solid fa-envelope contact"> <a href="mailto:autumnbasinger@gmail.com">autumnbasinger@gmail.com</a></li>
+
 					</section>
 
 					<section id="two">
-						<h3>Let's talk</h3>
-						<li class="icon brands solid fa-linkedin contact"> <a href="https://www.linkedin.com/in/autumnbasinger/">LinkedIn</a></li>
-						<li class="icon solid fa-envelope contact"> <a href="mailto:autumnbasinger@gmail.com">autumnbasinger@gmail.com</a></li>
+						<h3 id="reply">Let's talk</h3>
+
+						<form id="contact" enctype="text/plain" action='https://docs.google.com/forms/d/e/1FAIpQLSeBQU_fXqk1Eb6WDUHYsrfASksPRkHqZoHElTok1bmbjX0JZw/formResponse?' target="hidden_iframe" onsubmit="submitted=true;">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-6 col-12-xsmall"><input required oninvalid="this.setCustomValidity('And you are?')" oninput="setCustomValidity('')" type="text" name="entry.1290020355" id="entry.1290020355" placeholder="Name"></div>
+								<div class="col-6 col-12-xsmall"><input required oninvalid="this.setCustomValidity('Enter a valid email')" oninput="setCustomValidity('')" type="email" name="entry.1851691170" id="entry.1851691170" placeholder="Email"></div>
+								<div class="col-12"><textarea required oninvalid="this.setCustomValidity('What do you want to talk about?')" oninput="setCustomValidity('')" name="entry.98625317" id="entry.98625317" placeholder="I want to talk about..." rows="3"></textarea></div>
+							</div>
+
+							<script type="text/javascript">
+								let submitted=false;
+								function thanks() {
+									document.getElementById("contact").reset();
+									document.getElementById("reply").innerHTML = "Thanks for your message!";
+									setTimeout(function() {
+										document.getElementById("reply").innerHTML = "More to say?";
+									}, 2200);
+								}
+							</script>
+
+							<ul class="actions" style="margin-top: 1em;">
+								<li><input id="submit" type="submit" value="Send message" /></li>
+							</ul>
+						</form>
+
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {thanks();}"></iframe>
 					</section>
 
 			</div>
