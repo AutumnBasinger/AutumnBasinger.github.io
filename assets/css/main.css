@@ -2025,10 +2025,16 @@ input, select, textarea {
 
 /* Icon */
 
+	a.icon:hover {
+		background: white;
+		color: #ff8888;
+	}
+
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		color: #3A3A3A;
 	}
 
 		.icon:before {
