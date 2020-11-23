@@ -26,6 +26,10 @@ section, summary, time, mark, audio {
 	font-family: 'Open Sans', sans-serif;
 	vertical-align: baseline;}
 
+iframe {
+	width: 100%;
+}
+
 video {
 	border-radius: 0.35em;
 }
@@ -118,6 +122,10 @@ input, select, textarea {
 			text-decoration: underline;
 		}
 
+		p a:hover{
+			background: linear-gradient(to right, #ffe 0%, #ffe 10%, #fef 100%);
+		}
+
 		a.selected {
 			background: linear-gradient(to right, #ffffee 0%, #ffffee 10%, #ff8888 50%, #ffeeff 85%, #ffeeff 100%);
 		}
@@ -143,6 +151,12 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 		color: #3A3A3A;
 		margin-top: 1em;
+	}
+
+	p a {
+		color: #ac3973;
+		text-decoration: underline;
+		font-weight: bold;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
