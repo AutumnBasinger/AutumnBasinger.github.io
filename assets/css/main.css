@@ -2662,7 +2662,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: left;
 		top: 0;
-		width: 400px;
+		width: 480px;
 	}
 
 		#header > * {
@@ -2740,8 +2740,9 @@ input, select, textarea {
 	#main {
 		margin-left: 400px;
 		max-width: 1500px;
-		padding: 4em 3em 3em 3em;
+		padding: 4em 6em 4em 10em;
 		width: calc(100% - 400px);
+		/* max-width:2000px; */
 	}
 
 		#main > section {
@@ -3048,18 +3049,21 @@ input, select, textarea {
 		}
 
 		#header li {
-			font-size: 1em;
+			font-size: 1.2em;
+			line-height: 1.8em;
+			text-align: left;
 		}
 
 		#header {
-			padding: 3em 3em 3em 3em;
-			width: 280px;
+			padding: 4em 4em;
+			/* width: 280px; */
+			width: 380px;
 		}
 
 		#main {
 			margin-left: 280px;
 			max-width: none;
-			padding: 3em 3em 3em 3em;
+			padding: 4em 6em 3em 12em;
 			width: calc(100% - 280px);
 		}
 
@@ -3082,7 +3086,7 @@ input, select, textarea {
 			/* aeb header make fixed */
 
 			#header {
-				padding: 3em 3em 3em 3em;
+				padding: 3em 3em;
 				width: 280px;
 			}
 
@@ -3113,7 +3117,7 @@ input, select, textarea {
 			#main {
 				margin-left: 280px;
 				max-width: none;
-				padding: 3em 3em 3em 3em;
+				padding: 3em 3em;
 				width: calc(100% - 280px);
 			}
 
@@ -3150,7 +3154,7 @@ input, select, textarea {
 				background-position: top left, center center;
 				background-size: auto,		cover;
 				left: auto;
-				padding: 2.5em 2.5em;
+				padding: 2.5em 3em;
 				position: relative;
 				text-align: center;
 				top: auto;
@@ -3178,7 +3182,7 @@ input, select, textarea {
 				background-size: auto,							cover;
 				bottom: auto;
 				left: auto;
-				padding: 4em 4em 6em 4em;
+				padding: 4em 4em 4em 4em;
 				position: relative;
 				text-align: center;
 				width: 100%;
@@ -3204,7 +3208,7 @@ input, select, textarea {
 
 			#main {
 				margin: 10px;
-				padding: 4em 2em;
+				padding: 3em 3em;
 				width: 100%;
 			}
 
@@ -3272,7 +3276,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 2.25em 1.5em 0.25em 1.5em;
+				padding: 2em 2em;
 			}
 
 				#main > section {
@@ -3304,7 +3308,11 @@ input, select, textarea {
 		/* Header */
 
 		#header {
-			padding: 1em 1em;
+			padding: 1.5em 1em;
+		}
+
+		#main {
+			padding: 1.5em 1em;
 		}
 
 		#header h1 {
