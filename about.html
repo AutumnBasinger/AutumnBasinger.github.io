@@ -65,7 +65,7 @@
 						<form id="contact" enctype="text/plain" action='https://docs.google.com/forms/d/e/1FAIpQLSeBQU_fXqk1Eb6WDUHYsrfASksPRkHqZoHElTok1bmbjX0JZw/formResponse?' target="hidden_iframe" onsubmit="submitted=true;">
 
 							<div class="row gtr-uniform gtr-50">
-								<div class="col-6 col-12-xsmall" style="display:none"><input type="text" name="validate" placeholder="Human? Leave this blank."/></div>
+								<div class="col-6 col-12-xsmall" style="display:none"><input type="text" name="validate" placeholder="Human? Leave this blank...OR ELSE :)"/></div>
 								<div class="col-6 col-12-xsmall"><input required oninvalid="this.setCustomValidity('And you are?')" oninput="setCustomValidity('')" type="text" name="entry.1290020355" id="entry.1290020355" placeholder="Name"></div>
 								<div class="col-6 col-12-xsmall"><input required oninvalid="this.setCustomValidity('Enter a valid email')" oninput="setCustomValidity('')" type="email" name="entry.1851691170" id="entry.1851691170" placeholder="Email"></div>
 								<div class="col-12"><textarea required oninvalid="this.setCustomValidity('What do you want to talk about?')" oninput="setCustomValidity('')" name="entry.98625317" id="entry.98625317" placeholder="I want to talk about..." rows="3"></textarea></div>
@@ -76,7 +76,10 @@
 
 								document.forms["contact"]["validate"].onkeypress = function () {
 								    alert("You must be a bot!")
-										window.location.replace("https://autumnbasinger.github.io");
+										alert("I wouldn't do this to a human, but for you...")
+										alert("I'd like to play you a song.")
+										alert("You might have to watch an ad too, I'm afraid...")
+										window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 								};
 
 								function thanks() {
