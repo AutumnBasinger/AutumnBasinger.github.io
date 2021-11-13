@@ -1,86 +1,134 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160651739-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-160651739-1');
-		</script>
-		<title>Interactive Shapes</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en-US">
 
-		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-				<h2><a class="title" href="index.html">autumn basinger</a></h2>
-				<li>‽ <a href="about.html">design philosophy & about</a></li>
-				</br>
-				<h1>my work</h1>
-					<li>‽ <a href="pax.html">animated petals</a></li>
-					<li>‽ <a href="weather.html">mobile weather app</a></li>
-					<li>‽ <a href="apple.html">process automation</a></li>
-					<li>‽ <a href="scale.html">content design</a></li>
-					<li>‽ <a href="makenote.html">music instrument</a></li>
-					<li>‽ <a class="selected" href="turvangles.html">interactive shapes</a></li>
-					<li>‽ <a href="scentsation.html">scented emotions</a></li>
-			</div>
-		</header>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Autumn Basigner</title>
+    <meta name="description" content="Autumn Basinger Portfolio"/>
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,600,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
 
-		<!-- Main -->
-			<div id="main">
-					<section id="one">
-						<h3>Modular shapes for an interactive spatial sculpture</h3>
-						<span class="image fit"><img src="images/turv-gallery.jpg" alt="" /></span>
-						<p>For my graduating BFA gallery exhibition, I created Turvangles. They're a set of 16 <i>different</i> asymmetrical interlocking shapes that together allow users to form a myriad of mathematically unique spatial sculptures.</p>
-						<p>When I first started sketching out ideas for modular shapes, I was very drawn to working with non-right angles. I liked the idea of irregularity and wanted to introduce an unpredictable nature to the building process.</p>
-						<p>I knew I was planning to laser cut my final shapes out of wood, and this was my biggest constraint during ideation. Although I had infinite two-dimensional freedom, the third would just be a right-angled extrusion of whatever I came up with. I would essentially have flat plains intersecting perpendicularly. This meant I needed to create the spatial angles I was looking for through the design of the shapes themselves.</p>
-						<p>The first set that I cut and tested involved attaching multiple 120° arcs (the highlighted leftmost shape) together in different ways:<p>
-						<span class="image fit"><img src="images/turv-hex.png" alt="" /></span>
-						<p>While I liked shapes having several connection points, it was impossible to fit new shapes at both ends of any 240° arc (shapes 2, 4, and 6 in the lineup). Other shapes had only two connection points which felt a bit boring.</p>
-						<p>As I was working on a revision, I realized something important: I had been trying to create interesting angles by going <i>around</i> the circumference of hexagons, but what are hexagons except six triangles put together? I could achieve the same angles more succinctly by going <i>through</i> triangles instead.</p>
-						<p>I started by creating the smaller template on the left in the picture below, and then made one shape for each unique combination of three connection points. (If a shape could be flipped to form a previous shape, it wasn’t unique.) This gave me four shapes, which didn’t seem like quite enough, so I mirrored the template and found an additional 12 shapes using the same method.</p>
-						<span class="image fit"><img src="images/turv-template.png" alt="" /></span>
-					</section>
+  <body id="top">
+    <div class="page">
 
-					<section id="two">
-						<h3>Possibilities</h3>
-						<p>Okay, buckle up! We're diving into some math.</p>
-						<p>For the exhibition, I made several sets of Turvangles for people to play with. But technically, one set is composed of 16 unique Turvangle types. How many <i>different</i> sculptures, I wondered, could <i>possibly</i> be made using just one set of Turvangles?</p>
-						<span class="image fit"><img src="images/turv-mock.png" alt="" /></span>
-						<p>Let’s start with just two different shapes. Each is asymmetrical and has 3 connection points. Holding one shape still, there are 6 different ways that we could attach the second shape (3 connection points * 2 sides) to any <i>one</i> connection point on the first shape. Multiply this by 3, the number of connection points on the first shape, and we have 18 different two-shape sculpture possibilities.</p>
-						<p>But how many <i>16-shape</i> sculpture possibilities are there?</p>
-						<span class="image left"><img src="images/turv-calc.jpg" alt="" /></span>
-						<p>I had answered this question back when I first created Turvangles. However, I recently realized that my careful calculations had been wrong! It turns out that the real answer is much higher than I thought, and it was <i>already</i> in the septillions. To the left is a picture of my recalculations. </p>
-						<p>Previously, I figured there could be 432 three-shape sculptures: 4 open connection points on a two-shape sculpture times 6 ways to attach the third shape times 18 <i>previous</i> two-shape sculpture possibilities. My mistake was that I failed to consider that these 432 possibilities did not include any three-shape sculptures in which the first two shapes were not still directly connected.</p>
-						<p>I found that there are actually 648 three-shape sculpture possibilities, but I did not go on to calculate the true number of 16-shape possibilities because I’m busy doing new things with my life. Stay tuned. I may try to figure it out one day.</p>
-					</section>
+      <header>
+        <div class="ab-header">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container"><a href="index.html"><img src="images/favicon.png"></a><a class="navbar-brand" href="index.html"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Autumn-Basinger-Resume.pdf">Resume</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
 
-					<section id="three">
-						<span class="image fit"><img src="images/turv-kids.jpg" alt="" /></span>
-						<span class="image fit"><img src="images/turv-tall.jpg" alt="" /></span>
-						<span class="image fit"><img src="images/turv-stained.jpg" alt="" /></span>
-					</section>
-			</div>
+      <div class="page-content">
+      <div class="container">
+      <div class="container ab-section">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <div class="row mt-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <a href="scent.html"><img class="img-fluid" src="images/turv-cover.jpg" alt="App"/></a>
+        </div>
+        <div class="col-md-6 mt-4">
+          <h1 class="h1 display-4">Turvangles: Modular shapes for a build-it-yourself sculpture</h1>
+          <p class="mt-3"><b class="marker">Outcome</b></br><b class="small">Turvangles are interactive, interlocking modular shapes that afford building a near-limitless number of sculptural forms.</b></p>
+          <!-- <p class="mt-3"><b class="marker">Expertise</b></br><b class="small">Interaction design</br>Laser cutting</br>Permutations</b></p> -->
+        </div>
+      </div>
 
-	</body>
-</html>
+      <div class="row mt-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div><p class="marker">Inspiration</p></div>
+        </div>
+        <div class="col-md-8">
+          <p>As a big fan of systems that allow for creative exploration (and permutations),
+            I set out to design a set of modular shapes that did exactly that for my graduating BFA exhibition.</p>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div><p class="marker">Iteration</p></div>
+        </div>
+        <div class="col-md-8">
+          <p>When I first started sketching ideas, I quickly found that non-right angles were
+            the way to go for introducing unpredictability to the building process.</p>
+          <p>As I planned to laser cut my shapes from wood, I needed to create varied angles
+            within the two-dimensional surfaces of the shapes themselves.</p>
+          <p>This was the set I initially prototyped:</p>
+          <img class="img-fluid mt-4" src="images/turv-hex.png"/>
+          <p>While I liked that each shape had multiple connection points, it proved impossible
+            to fit new shapes at any two points that together formed an angle less than 90 degrees.</p>
+          <p>In revising my design, I realized there was a simpler way to create the angles I was looking for.
+            Instead of going <i>around</i> the circumference of hexagons, I could go <i>through</i> the middle of triangles.</p>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div><p class="marker">Final Design</p></div>
+        </div>
+        <div class="col-md-8">
+          <p>I ended up designing this triangular template, which I used to make shapes
+            for every unique combination of three connection points.</p>
+          <img class="img-fluid mt-4" src="images/turv-template.png"/>
+          <p>These 16 Turvangles make a complete set:</p>
+          <img class="img-fluid mt-4" src="images/turv-mock.png"/>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div><p class="marker">Gallery Exhibition</p></div>
+        </div>
+        <div class="col-md-8">
+          <p>I loved watching people interact with Turvangles at the exhibition!</p>
+          <img class="img-fluid mt-4" src="images/turv-kids.jpg"/>
+          <img class="img-fluid mt-4" src="images/turv-me.jpg"/>
+          <img class="img-fluid mt-4" src="images/turv-tall.jpg"/>
+          <img class="img-fluid mt-4" src="images/turv-stained.jpg"/>
+        </div>
+      </div>
+
+    </div> <!-- ab-section end -->
+
+      <div class="container ab-section">
+        <div class="row mt-4">
+          <div class="col-md-1"></div>
+          <div class="col-md-7 mt-4">
+            <p>Want to talk? Find me on <a class="small" href="https://www.linkedin.com/in/autumnbasinger/">LinkedIn</a> or
+              reach out at <a class="small" href="mailto: autumnbasinger@u.northwestern.edu">autumnbasinger@u.northwestern.edu</a></p>
+            <p class="mt-3 small"><a href="Autumn-Basinger-Resume.pdf">View resume &rarr;</a></p>
+          </div>
+        </div>
+        <div class="row mt-4"></div>
+      </div>
+
+    </div> <!-- container -->
+    </div> <!-- page content end -->
+    </div> <!-- page end -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+    </body>
+    </html>
