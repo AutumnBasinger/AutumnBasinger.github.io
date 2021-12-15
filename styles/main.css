@@ -169,8 +169,8 @@ a {
 }
 
 a:hover {
-  color: #bbaaee;
-  text-decoration: underline;
+  /* color: #bbaaee; */
+  /* text-decoration: underline; */
 }
 
 a:not([href]):not([tabindex]) {
@@ -378,10 +378,12 @@ h2, .h2 {
 }
 
 h3, .h3 {
+  font-family: 'Spartan', serif;
   font-size: 1.75rem;
 }
 
 h4, .h4 {
+  font-family: 'Spartan', serif;
   font-size: 1.5rem;
 }
 
@@ -419,7 +421,7 @@ h6, .h6 {
 }
 
 .display-4 { /* post title aeb */
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.1;
   margin-bottom: 3rem;
@@ -495,15 +497,16 @@ mark,
 }
 
 .img-half {
-  max-width: 45%;
+  max-width: 48%;
   height: auto;
   border-top-left-radius: 0.1rem;
   border-top-right-radius: 0.1rem;
 }
 
 .img-third {
-  max-width: 32%;
+  max-width: 31%;
   height: auto;
+  margin-right: 0.1rem;
   border-top-left-radius: 0.1rem;
   border-top-right-radius: 0.1rem;
 }
@@ -3643,7 +3646,7 @@ tbody.collapse.show {
 }
 
 .nav-link:hover, .nav-link:focus {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .nav-link.disabled {
@@ -3679,6 +3682,7 @@ tbody.collapse.show {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
+  text-decoration: underline;
 }
 
 .nav-tabs .dropdown-menu {
@@ -3694,6 +3698,7 @@ tbody.collapse.show {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
+  /* text-decoration: underline; */
   background-color: #007bff;
 }
 
@@ -4142,6 +4147,7 @@ tbody.collapse.show {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9);
+  text-decoration: underline;
 }
 
 .navbar-light .navbar-toggler {
@@ -4190,6 +4196,7 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
+  /* text-decoration: underline; */
 }
 
 .navbar-dark .navbar-toggler {
@@ -9281,3 +9288,19 @@ body {
 .soon {
   color: #bbbbbb;
 }
+
+.black {
+  color: black;
+}
+
+.black a:hover {
+  background-color: #e2deed;
+}
+
+.emphasis {
+  background-color: #DED8EE;
+}
+
+/* .emphasis:hover {
+  background-color: #e2deed;
+} */
